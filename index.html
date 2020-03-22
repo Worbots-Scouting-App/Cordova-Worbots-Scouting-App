@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WBS</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Josefin+Sans|Odibee+Sans&display=swap" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <<!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDsr810pkhDNV9gl9VP-eGb-s73958AuhA",
+            authDomain: "wbs-data-de3c3.firebaseapp.com",
+            databaseURL: "https://wbs-data-de3c3.firebaseio.com",
+            projectId: "wbs-data-de3c3",
+            storageBucket: "wbs-data-de3c3.appspot.com",
+            messagingSenderId: "788521835185",
+            appId: "1:788521835185:web:51497da908b027ec226090",
+            measurementId: "G-RVVGNBMKTV"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/api-thebluealliance.js"></script>
+        <script src="uikit/js/uikit.min.js"></script>
+        <script src="uikit/js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="uikit/css/uikit.min.css" />
+</head>
+
+<body style="position: absolute;">
+    <div style="padding-top: 50% ">
+        <div style="text-align: center; " class=uk-animation-slide-top-small>
+            <img src="img/logo.png" width="30%" height="30%"></img>
+        </div>
+        <div>
+            <h2 id=head style="text-align: center;font-family: 'Josefin Sans', sans-serif; color: white;" class=uk-animation-slide-bottom>Worbots Scouting</h2>
+        </div>
+        <div id="signinbuttons" style="text-align: center;">
+            <div>
+            </div>
+            <button id="In" onclick="sign()" style="text-align: center; border-radius: 25px;" class="uk-button uk-button-primary uk-animation-slide-bottom">Sign In</button>
+            <br>
+            <br>
+            <br>
+            <!-- <button id="Out" style="text-align: center; border-radius: 25px;" class="uk-button uk-button-primary uk-animation-slide-bottom">Sign Out</button> -->
+        </div>
+        <div id=login_div style="text-align: center;">
+            <input id=name style="z-index: 1;" type="text" name="" placeholder="Enter name">
+            <input id=team style="z-index: 1;" type="number" name="" placeholder="Enter team number" min="10" max="10000">
+            <button id="In" onclick="startmatch()" style="text-align: center; border-radius: 25px;" class="uk-button uk-button-primary uk-animation-slide-bottom">Let's Go</button>
+        </div>
+        <div id=reigonal style="text-align: center;">
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search for names.." title="Type in a name">
+            <ul id="myUL">
+            </ul>
+        </div>
+        <div id=match style="text-align: center;">
+            <input type="text" id="myInput2" onkeyup="search2()" placeholder="Search for names.." title="Type in a name">
+            <ul id="myULs">
+            </ul>
+        </div>
+        <div id=game style="text-align: center;">
+            <ul id=teamselect>
+                
+            </ul>
+        	<!-- <canvas id="canvas" width="690" height="651" style="cursor:crosshair;background:url(img/mainfield.png)"></canvas> -->
+        </div>
+        <div id=locred style="text-align: center;">
+    
+            <canvas id="canvas" width="690" height="651" style="cursor:crosshair;background:url(img/mainfield.png)"></canvas>
+        </div>
+        <div id=locblue style="text-align: center;">
+    
+            <canvas id="canv" width="690" height="651" style="cursor:crosshair;background:url(img/mainfield.png)"></canvas>
+        </div>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</body>
+
+</html>

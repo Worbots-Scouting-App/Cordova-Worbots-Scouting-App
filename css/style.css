@@ -1,0 +1,64 @@
+body,html{
+	background-color: black;
+	color: black;
+
+}
+#login_div input,#myInput, #myInput2{
+	text-align: center;
+	margin: 3%;
+	padding-top:1%;
+	padding-bottom: 1%; 
+	border-radius: 20px;
+	font-size: 30px;
+	outline: none;
+	border-color: #0D71F2;
+	font-family: 'Josefin Sans', sans-serif;
+	
+}
+a{
+	font-size: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+
+}
+@media screen  {
+     canvas{
+	background-image: url("../img/mainfield.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	cursor: crosshair;
+	
+
+
+}
+
+@media screen and (orientation:portrait) {
+    canvas{
+	background-image: url("../img/mainfield.png");
+	background-repeat: no-repeat;
+	
+	margin-top: 50%;
+	border-width: 5px;
+	border-color: #3C494E;
+	border-radius: 20px;
+	
+
+
+}
+}
+
+@media screen and (orientation:landscape) {
+     canvas{
+	background-image: url("../img/mainfield.png");
+	background-repeat: no-repeat;
+	
+	margin-top: 0%;
+	border-width: 5px;
+	border-color: #3C494E;
+	border-radius: 20px;
+
+
+}
+
+}
